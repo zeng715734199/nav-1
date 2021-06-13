@@ -1,0 +1,15 @@
+{
+  "script": {
+    "build": "rm -rf dist && parcel build src/index.html --no-minify --pubilc-url ./"
+  },
+  "name": "nav-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:zeng715734199/nav-1.git",
+  "author": "Mr.z <715734199@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.2"
+  }
+}

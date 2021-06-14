@@ -24,7 +24,9 @@ const render = () => {
   hashMap.forEach((node, index) => {
     const $li = $(`<li>
             <div class="site">
+              <div class="logoBorder">
               <div class="logo">${node.logo}</div>
+              </div>
               <div class="link">${simplifyUrl(node.url)}</div>
               <div class="close">
               <svg class="icon" aria-hidden="true">

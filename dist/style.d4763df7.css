@@ -123,22 +123,29 @@ body {
     margin-right: 25px;
   }
 }
+.siteList .site:hover {
+  border: 1px solid rgb(206,203,200);
+}
 .siteList .site {
-  border: 1px solid #ddd;
   width: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: white;
   border-radius: 5px;
   padding: 20px 0;
   position: relative;
   cursor: pointer;
 }
-.siteList .site > .logo {
-  width: 64px;
-  height: 64px;
+.siteList .site > .logoBorder{
+  border: 3px solid #ddd;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+.siteList .site .logoBorder > .logo {
+  max-width: 52px;
+  max-height: 52px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,15 +166,16 @@ body {
 .siteList .site:hover > .close {
   display: block;
 }
+.siteList .addButton:hover {
+border: 1px solid rgb(206,203,200);
+}
 .siteList .addButton {
-  border: 1px solid #ddd;
   width: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px 0;
-  background: white;
+  padding: 26px 0;
   border-radius: 5px;
 }
 
@@ -182,9 +190,12 @@ body {
   height: 54px;
   width: 54px;
 }
-.siteList .addButton > .test {
+.siteList .addButton > .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
-  margin-top: 4px;
+  margin-top: 9px;
 }
 
 .state{
@@ -204,4 +215,4 @@ body {
 }
 
 
-/*# sourceMappingURL=style.b04a60b1.css.map */
+/*# sourceMappingURL=style.d4763df7.css.map */

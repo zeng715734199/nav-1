@@ -140,7 +140,7 @@ var simplifyUrl = function simplifyUrl(url) {
 var render = function render() {
   $siteList.find('li:not(.last)').remove();
   hashMap.forEach(function (node, index) {
-    var $li = $("<li>\n            <div class=\"site\">\n              <div class=\"logo\">".concat(node.logo, "</div>\n              <div class=\"link\">").concat(simplifyUrl(node.url), "</div>\n              <div class=\"close\">\n              <svg class=\"icon\" aria-hidden=\"true\">\n              <use xlink:href=\"#icon-close1\"></use>\n              </svg>\n              </div>\n            </div>\n        </li>")).insertBefore($last);
+    var $li = $("<li>\n            <div class=\"site\">\n              <div class=\"logoBorder\">\n              <div class=\"logo\">".concat(node.logo, "</div>\n              </div>\n              <div class=\"link\">").concat(simplifyUrl(node.url), "</div>\n              <div class=\"close\">\n              <svg class=\"icon\" aria-hidden=\"true\">\n              <use xlink:href=\"#icon-close1\"></use>\n              </svg>\n              </div>\n            </div>\n        </li>")).insertBefore($last);
     $li.on('click', function () {
       window.open(node.url);
     });
@@ -183,4 +183,4 @@ $(document).on('keypress', function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.82a644e1.js.map
+//# sourceMappingURL=main.3b5623d3.js.map
